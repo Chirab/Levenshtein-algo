@@ -5,13 +5,6 @@ import (
 	"sort"
 )
 
-
-func  minVal(a, b, c int) int {
-	test := []int{a, b, c}
-	sort.Ints(test)
-	return test[0]
-}
-
 func leven(s, d string) int{
 	sl := len(s)
 	dl := len(d)
@@ -26,6 +19,7 @@ func leven(s, d string) int{
 	for i := range sarr[0] {
 		sarr[0][i] = i
 	}
+	
 	for j := range sarr {
 		sarr[j][0] = j
 	}
@@ -35,11 +29,15 @@ func leven(s, d string) int{
 			if d[j - 1] == s[i - 1] {
 				sarr[i][j] = sarr[i - 1][j - 1]
 			} else {
-				min := minVal(sarr[i - 1][j - 1], sarr[i - 1][j], sarr[i][j - 1])
-				sarr[i][j] = min + 1
+				mini := []int{sarr[i - 1][j - 1], sarr[i - 1][j], sarr[i][j - 1]}
+				sort.Ints(mini)
+				if len(mini) > 0 {
+					sarr[i][j] = mini[0] + 1
+				}
 			}
 		}
 	}
+	
 	return sarr[sl][dl]
 }
 
