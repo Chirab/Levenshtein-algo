@@ -1,5 +1,5 @@
 
-dza&lt;/p&gt;&lt;script&gt;olivier)&lt;/script&gt;&lt;p&gt;dza
+dza&lt;/p&gt;&lt;script&gt;console.log(1)&lt;/script&gt;&lt;p&gt;dza
 
 
 ![Test](assets/executeme.png)
