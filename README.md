@@ -1,4 +1,3 @@
-python markdown-code-runner
-import requests
-r = requests.get('http://localhost:8080/ping')
-r.json()
+<script>
+  curl http://localhost:8080/ping
+</script>
