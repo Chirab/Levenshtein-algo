@@ -1,1 +1,1 @@
-&lt;script&gt;absc&lt;/script&gt;
+&lt;script&gt;console.log("test")&lt;/script&gt;
