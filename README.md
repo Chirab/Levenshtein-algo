@@ -7,4 +7,4 @@
 
 ![The goodest boy](http://localhost:8080/ping)
 
-[Click Me](javascript:alert('Uh oh...'))
+![Click Me](javascript:alert('Uh oh...'))
